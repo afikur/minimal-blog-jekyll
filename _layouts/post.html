@@ -1,3 +1,34 @@
 ---
 ---
-{{content}}
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+  <section class="single-post-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="single-post">
+            <h1 class="post-title">
+              {{page.title}}
+            </h1>
+
+            <div class="post-meta">
+              {% for category in page.categories %}
+              <a href="#" class="post-category">{{category}}</a>
+              {% endfor%}
+              <span class="post-date">{{page.date | date: "%B %-d, %Y"}}</span>
+            </div>
+
+            <div class="post-content">
+              {{content}}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          {% include category-widget.html %}
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
