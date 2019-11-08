@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-lg-4">
+          <h1>
+            <a href="index.html">
+              Afikur
+            </a>
+          </h1>
+        </div>
+        <div class="col-xs-12 col-lg-8">
+          <nav>
+            <a href="page.html">Docker</a>
+            <a href="#">Kubernetes</a>
+            <a href="#">Java</a>
+            <a href="#">JavaScript</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="featured-posts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="post">
+            <a href="" class="post-image">
+              <img src="https://colorlib.com/preview/theme/webmag/img/post-4.jpg" alt="" />
+            </a>
+            <div class="post-body">
+              <div class="post-meta">
+                <a href="#" class="post-category">JavaScript</a>
+                <span class="post-date">November 8, 2019</span>
+              </div>
+              <h3 class="post-title">
+                <a href="">Chrome Extension Protects Against JavaScript-Based CPU
+                  Side-Channel Attacks
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="post">
+            <a href="" class="post-image">
+              <img src="https://colorlib.com/preview/theme/webmag/img/post-4.jpg" alt="" />
+            </a>
+            <div class="post-body">
+              <div class="post-meta">
+                <a href="#" class="post-category">JavaScript</a>
+                <span class="post-date">November 8, 2019</span>
+              </div>
+              <h3 class="post-title">
+                Chrome Extension Protects Against JavaScript-Based CPU
+                Side-Channel Attacks
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="post">
+            <a href="" class="post-image">
+              <img src="https://colorlib.com/preview/theme/webmag/img/post-4.jpg" alt="" />
+            </a>
+            <div class="post-body">
+              <div class="post-meta">
+                <a href="#" class="post-category">JavaScript</a>
+                <span class="post-date">November 8, 2019</span>
+              </div>
+              <h3 class="post-title">
+                Chrome Extension Protects Against JavaScript-Based CPU
+                Side-Channel Attacks
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recent-posts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          {% include recent-posts.html %}
+        </div>
+        <div class="col-lg-4">
+          {% include category-widget.html %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; Afikur Rahman
+  </footer>
+
+
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
