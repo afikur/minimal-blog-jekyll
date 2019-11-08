@@ -16,7 +16,7 @@
           <span class="post-date">{{post.date | date: "%B %-d, %Y"}}</span>
         </div>
         <h3 class="post-title">
-          <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
         </h3>
         <div class="post-content">
           <p>
@@ -25,7 +25,7 @@
         </div>
         {% if post.content contains '<!--break-->' %}
         <div class="read-more">
-          <a href="{{ post.url }}">Read more</a>
+          <a href="{{ site.baseurl }}/{{ post.url }}">Read more</a>
         </div>
         {% endif %}
 
