@@ -7,58 +7,7 @@
   <section class="featured-posts">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
-          <div class="post">
-            <a href="" class="post-image">
-              <img src="https://colorlib.com/preview/theme/webmag/img/post-4.jpg" alt="" />
-            </a>
-            <div class="post-body">
-              <div class="post-meta">
-                <a href="#" class="post-category">JavaScript</a>
-                <span class="post-date">November 8, 2019</span>
-              </div>
-              <h3 class="post-title">
-                <a href="">Chrome Extension Protects Against JavaScript-Based CPU
-                  Side-Channel Attacks
-                </a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="post">
-            <a href="" class="post-image">
-              <img src="https://colorlib.com/preview/theme/webmag/img/post-4.jpg" alt="" />
-            </a>
-            <div class="post-body">
-              <div class="post-meta">
-                <a href="#" class="post-category">JavaScript</a>
-                <span class="post-date">November 8, 2019</span>
-              </div>
-              <h3 class="post-title">
-                Chrome Extension Protects Against JavaScript-Based CPU
-                Side-Channel Attacks
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="post">
-            <a href="" class="post-image">
-              <img src="https://colorlib.com/preview/theme/webmag/img/post-4.jpg" alt="" />
-            </a>
-            <div class="post-body">
-              <div class="post-meta">
-                <a href="#" class="post-category">JavaScript</a>
-                <span class="post-date">November 8, 2019</span>
-              </div>
-              <h3 class="post-title">
-                Chrome Extension Protects Against JavaScript-Based CPU
-                Side-Channel Attacks
-              </h3>
-            </div>
-          </div>
-        </div>
+        {% include pinned-posts.html %}
       </div>
     </div>
   </section>
@@ -77,12 +26,7 @@
     </div>
   </section>
 
-  <footer>
-    &copy; Afikur Rahman
-  </footer>
-
-
-  <script src="{{ site.baseurl }}/assets/js/main.07704331.js"></script>
+  {% include footer.html %}
 </body>
 
 </html>

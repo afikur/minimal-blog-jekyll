@@ -1,0 +1,63 @@
+---
+---
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+
+  <section class="single-post-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="sidebar-widget">
+            <div class="title">
+              <h2>Docker Up And Running</h2>
+            </div>
+            <div class="widget-body menubar-widget">
+              <ul>
+                <li>
+                  <a href="#">Introduction to Docker</a>
+                  <ul>
+                    <li>
+                      <a href="#">What is docker and Why do we need Docker Part I</a>
+                    </li>
+                    <li>
+                      <a href="#">What is docker and Why do we need Docker Part II</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">Installation</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="single-post">
+            <h1 class="post-title">
+              {{page.title}}
+            </h1>
+
+            <div class="post-meta">
+              {% for category in page.categories %}
+              <a href="#" class="post-category">{{category}}</a>
+              {% endfor%}
+              <span class="post-date">{{page.date | date: "%B %-d, %Y"}}</span>
+            </div>
+
+            <div class="post-content">
+              {{content}}
+            </div>
+          </div>
+        </div>
+        <!-- /.col-lg-8 -->
+      </div>
+    </div>
+  </section>
+
+  {% include footer.html %}
+</body>
+
+</html>

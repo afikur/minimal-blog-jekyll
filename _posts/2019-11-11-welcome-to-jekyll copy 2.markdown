@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll! 1"
-date:   2019-11-08 18:29:56 +0600
+title:  "Welcome to Jekyll! 2"
+date:   2019-11-11 11:25:56 +0600
 categories: [jekyll, pinned]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

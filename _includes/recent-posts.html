@@ -7,18 +7,16 @@
   <div class="description">
     <div class="post-meta">
       {% for category in post.categories %}
+      {% if category != 'pinned' %}
       <a href="#" class="post-category">{{category}}</a>
+      {% endif %}
       {% endfor%}
       <span class="post-date">{{post.date | date: "%B %-d, %Y"}}</span>
     </div>
     <h3 class="post-title">
       <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
     </h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-      eum dolorum architecto obcaecati enim dicta praesentium, quam
-      nobis! Neque ad aliquam facilis numquam. Veritatis, sit.
-    </p>
+
     {{ post.content | split:'<!--break-->' | first }}
 
     {% if post.content contains '<!--break-->' %}
